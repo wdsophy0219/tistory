@@ -5,11 +5,12 @@
 @color-white:#FFF;
 @color-black:#000;
 @color-font:#666;
-@color-sub:#FF7234;
-@color-main:#B24312;
-@color-master:#00B29C;
+@color-sub:#360F32;
+@color-main:#360F32;
+@color-master:#360F32;
 @color-line:@color-sub;
 
+@layoutwidth:700px;
 
 //reset
 body{font-family: 'Kanit','Noto Sans KR',sans-serif;}
@@ -23,7 +24,8 @@ a{
 }
 
 //layout
-#header{padding:20px 50px;
+#header{
+    padding:20px 50px;
   outline:1px #F00 solid;
   text-align: center;
   background-color:@color-master;
@@ -57,7 +59,13 @@ a{
 
 }
 #container{
+
+  #content{
+    width:@layoutwidth;
+    float:left;
+  }
   width: 990px;
+
   margin:20px auto 0;
   border:1px #F00 solid;
   .entry{
@@ -94,13 +102,17 @@ a{
       }
     }
     .comment{
-        display: block;
-        margin-top:30px;
+      margin-top:30px;
       .commentList{
         border:1px #F00 solid;
+        li{
+          margin:10px 0;
+        }
         >ol>li{
-          margin:20px 0;
-          min-height:56px
+          margin:30px 0;
+          li{
+            margin-left:68px;
+          }
         }
         .image{
           display:block;
@@ -113,55 +125,53 @@ a{
           margin-right:10px;
           img{
             width:100%;
-            height: 100%;
           }
         }
-        .name{
-            font-size:11px;
-            color:@color-font;
-           }
-         .date {
-             font-size:11px;
-             color:@color-sub;
-             padding:0 10px;
-            }
         .control{
             float:right;
-            font-size: 12px;
-             a {
-              color:@color-white;
-              background-color:@color-sub;
-              padding:0 5px;
-              margin: 0 5px;
-              border-radius:3px;
-              .write {
-              background-color:@color-main;
-              }
-             }
-           }
-          }
-        .commentWrite {
-            overflow: hidden;
-            textarea {
-                width:97%;
-                border:1px solid @color-sub;
-                border-radius:3px;
-                padding:1%;
-                margin-bottom: 10px;
-            .comment-btn {
-            	height:30px;
-            	line-height:30px;
-            	padding:0 15px;
-            	background-color:@color-main;
-            	border:0 none;
-            	border-radius:3px;
-            	color:#FFF;
-            	float:right
-                }
-             }
-         }
+            +p{
+              border:1px #F00 solid;
+              overflow:hidden;
+
+            }
+
+        }
+
+      }
+      .textwrap{
+        border:1px #F00 solid;
+        margin:0 20px;
+        border-radius:3px;
+        text-align:center;
+        textarea{
+          border:0 none;
+          width:98%;
+          resize:none;
+          vertical-align:top;
+        }
+      }
     }
+    .paging{
+      text-align:center;
+      padding:20px 0;
+      a{
+        border:1px #F00 solid;
+        padding:0 5px;
+        border-radius: 3px;
+        font-size:12px;
+      }
+    }
+  }
+  #sidebar{
+    margin-left:@layoutwidth;
+    padding:0 10px;
+    border:1px #F00 solid;
+    .blogImage{
+      margin-top:-20px;
+    }
+  }
 }
+
 
 
 

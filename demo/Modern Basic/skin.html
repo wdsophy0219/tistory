@@ -1,0 +1,557 @@
+<!DOCTYPE>
+<!-- Modern Basic by.Estoque http://est0que.tistory.com  -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="[##_title_##] :: [##_page_title_##]">
+    <meta name="author" content="[##_article_rep_author_##]">
+    <meta name="keywords" content="[##_meta_http_equiv_keywords_##], [##_article_rep_title_##]"> 
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+	<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+	<link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+	<title>[##_title_##] :: [##_page_title_##]</title>
+</head>
+<body id="[##_body_id_##]">
+<s_t3>
+	<div id="wrapMid">
+			<div id="container">
+				<header id="header">
+					<div class="blogTitle">
+						<h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+					</div>
+					<nav class="blogMenu">
+						<div class="middleWrapBlogMenu">[##_blog_menu_##]</div>
+					</nav>
+				</header>
+				<!-- header close -->
+				<hr />
+		    <div id="wrapContent">
+					<div id="content">
+						<s_list>
+							<section id="searchList" class="nonEntry">
+								<h3>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h3>
+								<ol>
+									<s_list_rep>
+										<li>
+											<span class="date">[##_list_rep_regdate_##]</span>
+											<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+											<span class="cnt">[##_list_rep_rp_cnt_##]</span>
+										</li>
+									</s_list_rep>
+								</ol>
+							</section>
+						</s_list>
+
+						<s_media>
+							<div>				
+							    [##_media_content_##]
+							</div>
+						</s_media>
+
+						<s_local>
+							<section id="localog" class="nonEntry">
+								<h3>지역로그</h3>
+								<s_local_spot_rep>
+									<div class="spot" style="margin-left: [##_local_spot_depth_##]px">
+										[##_local_spot_##]
+									</div>
+								</s_local_spot_rep>
+								<s_local_info_rep>
+									<div class="info" style="margin-left: [##_local_info_depth_##]px">
+										<a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+									</div>
+								</s_local_info_rep>
+							</section>
+						</s_local>
+
+						<s_tag>
+							<section id="taglog" class="nonEntry">
+								<h3>태그</h3>
+								<ul>
+									<s_tag_rep>
+										<li>
+											<a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
+										</li>
+									</s_tag_rep>
+								</ul>
+							</section>
+						</s_tag>
+						
+						<s_keyword>
+							<section class="keyword">
+								<h3>키로그</h3>
+								<ul>
+									<s_keyword_rep>
+										<li>
+											<a href="#void" onclick="[##_onclick_keyword_##]">[##_keyword_label_##]</a>
+										</li>
+									</s_keyword_rep>
+								</ul>
+							</section>
+						</s_keyword>											
+
+						<s_guest>
+							<article id="guestbook" class="nonEntry">
+								<h3>방명록</h3>
+								<s_guest_input_form>
+									<div id="guestWrite">
+										<s_guest_member>
+											<s_guest_form>
+												<p class="writerInfo">
+													<label for="name">Name</label>
+													<input placeholder="이름 [필수]" type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
+												</p>
+												<p class="writerInfo">
+													<label for="password">Password</label>
+													<input placeholder="비밀번호 [필수]" type="password" name="[##_guest_input_password_##]" value="" />
+												</p>
+												<p class="writerInfo">
+													<label for="homepage">Blog/Homepage</label>
+													<input placeholder="블로그/ 홈페이지 주소" type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" class="homepage" />
+												</p>
+											</s_guest_form>
+											<p class="secretWrap">
+												<input type="checkbox" name="[##_guest_input_is_secret_##]" class="checkbox" />
+												<label for="secret"> 비밀글 </label>
+											</p>											
+										</s_guest_member>
+										<p>
+											<textarea placeholder="방명록을 입력해주세요" name="[##_guest_textarea_body_##]" cols="50" rows="6"> </textarea>
+										</p>
+										<p>
+											<button type="submit" value="안부 남기기" onclick="[##_guest_onclick_submit_##]" class="submit" >글 남기기</button>
+										</p>
+									</div><!-- guestWrite close -->
+								</s_guest_input_form>
+
+								<s_guest_container>
+									<div id="guestList">
+										<ol>
+											<s_guest_rep>
+												<li id="[##_guest_rep_id_##]">
+													<div class="[##_guest_rep_class_##]">
+														<p class="ctrlGuest">
+														<span class="name">[##_guest_rep_name_##]</span>
+														<span class="date"> [##_guest_rep_date_##]</span>
+														<span class="control">
+															<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify" title="수정/삭제">&nbsp;<span>수정/삭제</span></a>
+															<a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write" title="댓글쓰기">&nbsp;<span>댓글쓰기</span></a>
+														</span></p>
+														<p class="desc">[##_guest_rep_desc_##]</p>
+													</div>
+													<s_guest_reply_container>
+														<ul>
+															<s_guest_reply_rep>
+																<li id="[##_guest_rep_id_##]">
+																	<div class="[##_guest_rep_class_##]">
+																		<p class="ctrlGuestRe">
+																		<span class="name">[##_guest_rep_name_##]</span>
+																		<span class="date"> [##_guest_rep_date_##]</span>
+																		<span class="control">
+																			<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+																		</span></p>
+																		<p class="reDesc">[##_guest_rep_desc_##]</p>
+																	</div>
+																</li>
+															</s_guest_reply_rep>
+														</ul>
+													</s_guest_reply_container>
+												</li>
+											</s_guest_rep>
+										</ol>
+									</div><!-- guestList close -->
+								</s_guest_container>
+							</article><!-- guestbook close -->
+						</s_guest>
+
+						<s_notice_rep>
+							<article class="entryNotice">
+								<div class="titleWrap">
+									<h2><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+									<span class="category">공지사항</span><span  class="date">[##_notice_rep_date_##]</span>
+								</div>							
+								<div class="article">
+									[##_notice_rep_desc_##]
+								</div>						
+							</article>
+						</s_notice_rep>
+
+						<s_article_protected>
+							<article class="entryProtected">
+								<div class="titleWrap">
+									<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+									<span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> </span>
+									<span class="date">[##_article_rep_date_##]</span>
+								</div>
+								<div class="protectedContentWrap">
+									<p class="text">보호되어 있는 글입니다. <br />
+									내용을 보시려면 비밀번호를 입력하세요.</p>
+									<div class="protectedForm">
+										<label for="[##_article_password_##]">비밀번호</label>
+										<input id="[##_article_password_##]" name="[##_article_password_##]" type="password" onkeydown="if (event.keyCode == 13) [##_article_dissolve_##]" class="pass" />
+										<button type="button" class="submit" value="확인" onclick="[##_article_dissolve_##]">확인</button>
+									</div>
+								</div>
+							</article>
+						</s_article_protected>
+
+						<s_article_rep>
+							<article class="entry">
+								<div class="titleWrap">
+									<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+										<span class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> </span>
+										<span class="date">[##_article_rep_date_##]</span>
+								</div><!-- titleWrap close -->
+								<s_ad_div>
+									<div class="admin">
+										<a href="[##_s_ad_m_link_##]">수정</a> :
+										<a href="#" onclick="[##_s_ad_m_onclick_##]">수정(창으로)</a> |
+										([##_s_ad_s1_label_##])→<a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a> |
+										<a href="#" onclick="[##_s_ad_t_onclick_##]">관련글(트랙백)</a> |
+										<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+									</div>
+								</s_ad_div>
+								<div class="article">
+									[##_article_rep_desc_##]
+								</div>
+								<div class="author">
+									<span class="text">Posted by </span>[##_article_rep_author_##]
+								</div>
+
+								<s_tag_label>
+									<div class="tagTrail">
+										<span class="entypo-tag"></span> [##_tag_label_rep_##]
+									</div>
+								</s_tag_label>
+
+								<div class="actionTrail">
+										<a href="#tb" onclick="[##_article_rep_tb_link_##]"><s_tb_count>트랙백 <span class="cnt">[##_article_rep_tb_cnt_##]</span>개</s_tb_count></a>,
+										<a href="#rp" onclick="[##_article_rep_rp_link_##]"><s_rp_count>댓글 <span class="cnt">[##_article_rep_rp_cnt_##]</span>개가 달렸습니다</s_rp_count></a>
+								</div>
+
+								<s_tb>
+									<div class="trackback">
+										<h3>트랙백 주소 : [##_tb_address_##]</h3>
+										<s_tb_container>
+											<ol>
+												<s_tb_rep>
+													<li id="[##_tb_rep_id_##]">
+														<h4>Subject : <a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></h4>
+														<span class="from">Tracked from <span class="name">[##_tb_rep_site_##]</span></span>
+														<span class="date">[##_tb_rep_date_##]</span>
+														<a href="#" onclick="[##_tb_rep_onclick_delete_##]; return false" class="delete">&nbsp;<span>삭제</span></a>
+														<p>[##_tb_rep_desc_##]</p>
+													</li>
+												</s_tb_rep>
+											</ol>
+										</s_tb_container>
+									</div><!-- trackback close -->
+								</s_tb>
+
+								<s_rp>
+									<div class="comment">
+										<h3>댓글을 달아 주세요 </h3>
+										<div class="commentList">
+											<s_rp_container>
+												<ol>
+													<s_rp_rep>
+														<li id="[##_rp_rep_id_##]">
+															<div class="[##_rp_rep_class_##]">
+																<p class="commentControl">
+																<span class="name">[##_rp_rep_name_##]</span>
+																<span class="date"> [##_rp_rep_date_##]</span>
+																<span class="control">
+																	<a href="[##_rp_rep_link_##]" class="address" title="댓글주소">&nbsp;<span>댓글주소</span></a>
+																	<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify" title="수정/삭제">&nbsp;<span>수정/삭제</span></a>
+																	<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write" title="댓글쓰기">&nbsp;<span>댓글쓰기</span></a>
+																</span>
+																</p>
+																<p>[##_rp_rep_desc_##]</p>
+															</div>
+															<s_rp2_container>
+																<ul>
+																	<s_rp2_rep>
+																		<li id="[##_rp_rep_id_##]">
+																			<div class="[##_rp_rep_class_##]">
+																				<span class="name">[##_rp_rep_name_##]</span>
+																				<span class="date"> [##_rp_rep_date_##]</span>
+																				<span class="control">
+																					<a href="[##_rp_rep_link_##]" class="address">&nbsp;<span>댓글주소</span></a>
+																					<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">&nbsp;<span>수정/삭제</span></a>
+																				</span>
+																				<p>[##_rp_rep_desc_##]</p>
+																			</div>
+																		</li>
+																	</s_rp2_rep>
+																</ul>
+															</s_rp2_container>
+														</li>
+													</s_rp_rep>
+												</ol>
+											</s_rp_container>
+										</div><!-- commentList close -->
+
+										<s_rp_input_form>
+											<div class="commentWrite">
+												<s_rp_member>
+													<s_rp_guest>
+														<p class="writerInfo">
+															<label for="name">Name</label>
+															<input placeholder="이름 [필수]" type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" />
+														</p>
+														<p class="writerInfo">
+															<label for="password">Password</label>
+															<input placeholder="비밀번호 [필수]" type="password" name="[##_rp_input_password_##]" value="" />
+														</p>
+														<p class="writerInfo">
+															<label for="homepage">Blog/Homepage</label>
+															<input placeholder="블로그/ 홈페이지 주소" type="text" class="homepage" name="[##_rp_input_homepage_##]" value="[##_guest_homepage_##]"/>
+														</p>
+													</s_rp_guest>
+													<p class="secretWrap">
+														<input type="checkbox" name="[##_rp_input_is_secret_##]" class="checkbox" />
+														<label for="secret"> 비밀글 </label>
+													</p>
+												</s_rp_member>
+												<p class="clear">
+													<textarea placeholder="댓글을 입력해주세요" name="[##_rp_input_comment_##]" rows="10" cols="50"></textarea>
+												</p>
+												<p>
+													<button type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" class="submit">댓글 입력</button>
+												</p>
+											</div><!-- commentWrite close -->
+										</s_rp_input_form>
+
+									</div><!-- comment close -->
+								</s_rp>
+							</article><!-- entry close -->
+						</s_article_rep>
+
+						<s_paging>
+							<div id="paging">
+								<a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">이전</a>
+								<span class="numbox">
+									<s_paging_rep>
+									<a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
+									</s_paging_rep>
+								</span>
+								<a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">다음</a>
+							</div>
+						</s_paging>
+					</div><!-- content close -->
+					<hr />
+
+					<aside id="sidebar">
+						<s_sidebar>
+							<!-- 기본 사이드바 -->
+							<s_sidebar_element>
+							<!-- 블로그 프로필 모듈 -->
+								<section id="profile" cellpadding="0">
+									<div id="blogImage"><img src="[##_image_##]" alt="블로그 이미지" /></div>
+									<div id="blogDesc">
+										<p>[##_desc_##]</p><p class="userID">by <strong>[##_blogger_##]</strong></p>
+									</div>
+								</section>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 공지사항 모듈 -->
+								<s_rct_notice>
+									<div id="notice">
+										<ul>
+											<s_rct_notice_rep>
+												<li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a> </li>
+											</s_rct_notice_rep>
+										</ul>
+									</div>
+								</s_rct_notice>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 관리자 모듈 -->
+								<div id="adminMenu">
+									<ul>
+										<li class="tab_admin">
+											<a href="[##_owner_url_##]"><span class="entypo-key"></span> 관리자</a></li>
+										<li class="tab_write">
+											<a href="[##_owner_url_##]/entry/post"><span class="entypo-pencil"></span> 글쓰기</a></li>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 검색 모듈 -->
+								<div id="searchBox">
+									<s_search>
+										<input placeholder="블로그 검색" type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"/>
+										<button value="검색" type="button" onclick="[##_search_onclick_submit_##]" class="submit"><span class="entypo-search"></span> </button>
+									</s_search>
+								</div>
+							</s_sidebar_element>
+
+
+							<s_sidebar_element>
+							<!-- 카테고리 모듈 -->
+								<div id="category">
+									<h3>카테고리</h3>
+									[##_category_##]
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 태그목록 모듈 -->
+								<div id="tagbox">
+									<h3>태그목록</h3>
+									<ul>
+										<s_random_tags>
+											<li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a></li>
+										</s_random_tags>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 최근 포스트 모듈 -->
+								<div id="recentPost">
+									<h3>최근에 올라온 글 </h3>
+									<ul>
+										<s_rctps_rep>
+											<li>
+												<a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##].</a>
+												<span class="cnt">[##_rctps_rep_rp_cnt_##]</span>
+											</li>
+										</s_rctps_rep>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 최근 댓글 모듈 -->
+								<div id="recentComment">
+									<h3>최근에 달린 댓글</h3>
+									<ul id="recentComments">
+										<s_rctrp_rep>
+											<li>
+												<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##].</a>
+												<span class="info">
+													<span class="name">[##_rctrp_rep_name_##]</span>
+													<span class="date">[##_rctrp_rep_time_##]</span>
+												</span>
+											</li>
+										</s_rctrp_rep>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 최근 트랙백 모듈 -->
+								<div id="recentTrackback">
+									<h3>최근에 받은 트랙백</h3>
+									<ul>
+										<s_rcttb_rep>
+											<li>
+												<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##].</a>
+												<span class="info">
+													<span class="name">[##_rcttb_rep_name_##]</span>
+													<span class="date">[##_rcttb_rep_time_##]</span>
+												</span>
+											</li>
+										</s_rcttb_rep>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 최근 보관함 모듈 -->
+								<div id="archive">
+									<h3>글 보관함</h3>
+									<ul>
+										<s_archive_rep>
+											<li>
+												<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+												<span class="cnt">([##_archive_rep_count_##])</span>
+											</li>
+										</s_archive_rep>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 달력 모듈 -->
+								<div id="calendar">
+									<h3>달력</h3>
+									[##_calendar_##]
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 링크 모듈 -->
+								<div id="link">
+									<h3>링크</h3>
+									<ul>
+										<s_link_rep>
+											<li>
+												<a href="[##_link_url_##]" onclick="window.open(this.href); return false"> [##_link_site_##].</a>
+											</li>
+										</s_link_rep>
+									</ul>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- 카운터 모듈 -->
+								<div id="counter">
+									<dl>
+										<dt>Total</dt><dd class="total">[##_count_total_##]</dd>
+										<dt class="today">Today</dt><dd>[##_count_today_##]</dd>
+										<dt class="yesterday">Yesterday</dt><dd>[##_count_yesterday_##]</dd>
+									</dl>
+								</div>
+							</s_sidebar_element>
+						</s_sidebar>
+
+						<s_sidebar>
+						<!-- 배너 삽입 위치 -->
+
+							<s_sidebar_element>
+							<!-- 배너 모듈 - 티스토리 -->
+								<div id="adTistory">
+									<a href="http://www.tistory.com"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImxvZ29fMV8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxMDVweCIgaGVpZ2h0PSIzNHB4IiB2aWV3Qm94PSIwIDAgMTY0Ni45MTggNTA5Ljk3NSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTY0Ni45MTggNTA5Ljk3NSIKCSB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IlRpc3RvcnlfeEEwX0ltYWdlXzFfIj4KCTxnPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTEwMi44NjgsMTk0LjM5NGM5LjM2MywxLjMxNywxOC44NzksMS45NjksMjguMDY0LDQuMDY3CgkJCWMzOS43NDgsOS4wOCw2My44NDUsMzguMjk1LDY2LjAwMSw3OS4wNTljMC43NjMsMTQuNDA3LDAuMjcxLDI4LjYzOC00LjQwNiw0Mi40MzJjLTguNjM1LDI1LjQ2OC0yNi43NDIsNDEuOTMxLTUxLjI2OCw1MS4wMTUKCQkJYy0xMi4zNDMsNC41NzEtMjUuNjk2LDYuNDE2LTM4LjU5Myw5LjQ5NmMtMS4yNjksMC4zMDMtMi41MzIsMC42Mi0zLjc5OSwwLjkzMmMtOCwwLTE2LDAtMjQsMAoJCQljLTcuMzI5LTEuMzQ5LTE0Ljc0Ni0yLjMzOC0yMS45Ny00LjExNGMtMjEuNzA1LTUuMzM2LTQwLjg3Ny0xNC45MzgtNTQuMjc3LTMzLjcxM2MtNy43MjUtMTAuODIyLTExLjk5NC0yMy4wMjItMTMuMTg0LTM2LjEzNQoJCQljLTIuODk4LTMxLjkzOCwzLjMxOS02MS4wOSwyNy45NTctODMuNzg2YzE2LjE1OC0xNC44ODYsMzUuOTQyLTIyLjUyNyw1Ny4yODUtMjYuMTIxYzkuOTU2LTEuNjc3LDIwLjExOS0yLjEyNSwzMC4xODgtMy4xMzEKCQkJQzExMDEuNTM1LDE5NC4zOTQsMTEwMi4yMDEsMTk0LjM5NCwxMTAyLjg2OCwxOTQuMzk0eiBNMTA0Mi43MDQsMjkwLjEyYzAuMzkzLDMuOTczLDAuNjY3LDcuOTYxLDEuMTk5LDExLjkxNQoJCQljMy4xOTQsMjMuNzE2LDIzLjQ5NCw0MC42MSw0Ny4wODYsMzkuMjUxYzM0LjA1MS0xLjk2NCw1Ny44OTItMzQuMDc3LDQ5LjY3Ni02Ny4xOTRjLTcuMDY2LTI4LjQ4NS0yNy42NjctMzkuMDM5LTQ5Ljk5Ny0zNy4wNTcKCQkJQzEwNjAuNDM4LDIzOS43MTgsMTA0My4wNTksMjU5LjcyOSwxMDQyLjcwNCwyOTAuMTJ6Ii8+CgkJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNTcyLjg2OCwyMDEuMzk0Yy0wLjkyOCwxLjEyNS0xLjk0OSwyLjE4Ni0yLjc2OCwzLjM4NQoJCQljLTIyLjgyNSwzMy40MTYtNDUuNjc3LDY2LjgxNS02OC4zNDMsMTAwLjM0Yy0xLjYzOCwyLjQyMy0yLjU5OCw1Ljc0OC0yLjY5Nyw4LjY5M2MtMC42NSwxOS4xNDktMC45NywzOC4zMTEtMS40MTUsNTcuNDY3CgkJCWMtMC4wNDIsMS44MDctMC4yMDksMy42MDktMC4zMzgsNS43MzdjLTE5LjMzMSwwLTM4LjM5NiwwLTU4LjA5NSwwYzAuNjk2LTEwLjIzNiwxLjM4LTIwLjQ0NSwyLjA5MS0zMC42NTEKCQkJYzAuODY3LTEyLjQ2NCwxLjg4OS0yNC45MTgsMi41MzItMzcuMzkzYzAuMTI3LTIuNDYyLTAuNjQtNS4yOTEtMS44Ny03LjQ1M2MtMTguMTA1LTMxLjgzMi0zNi4zNjEtNjMuNTc5LTU0LjU3My05NS4zNTEKCQkJYy0wLjg4LTEuNTM2LTEuNjgyLTMuMTE2LTIuODM1LTUuMjY0YzIuMDc2LTAuMTEsMy40OTYtMC4yNSw0LjkxNy0wLjI1MWMxNy44My0wLjAxNSwzNS42NjEsMC4wODksNTMuNDg5LTAuMDk1CgkJCWMzLjUwNi0wLjAzNSw1LjI4MywxLjAzOCw2LjcyMSw0LjI2M2M3LjUxOSwxNi44NjYsMTUuMjg0LDMzLjYyMiwyMi45NjgsNTAuNDE1YzAuNjg2LDEuNDk4LDEuNDA0LDIuOTgsMi40MTMsNS4xMTYKCQkJYzEuMTk0LTEuOTA4LDIuMTM5LTMuMzEyLDIuOTc3LTQuNzc2YzkuNjc0LTE2LjkwMywxOS40MTQtMzMuNzY5LDI4LjkxOS01MC43NjdjMS43ODctMy4xOTcsMy44MjUtNC4yNzQsNy40NTUtNC4yNTUKCQkJYzE5LjQ4MywwLjEwNCwzOC45NjgtMC4wNzgsNTguNDUyLTAuMTYxQzE1NzIuODY4LDIwMC43MjcsMTU3Mi44NjgsMjAxLjA2MSwxNTcyLjg2OCwyMDEuMzk0eiIvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzkyLjg2OCwyMzQuMzk0YzAuNTk5LTkuNDQ0LDEuMTk1LTE4Ljg4OSwxLjc5OS0yOC4zMzMKCQkJYzAuMTA0LTEuNjI5LDAuMjM3LTMuMjU2LDAuMzc1LTUuMTNjNTUuMzI5LDAsMTEwLjM3MiwwLDE2Ni4wNCwwYy0wLjU0NiwxMi41MzItMS4wNzgsMjQuNzUxLTEuNjI5LDM3LjM5NgoJCQljLTE4LjM2NSwwLTM2LjI5LDAtNTQuODY0LDBjLTIuMzA3LDQ2LjM5Mi00LjU5NCw5Mi4zNzctNi44OTcsMTM4LjY4OGMtMTkuMzE4LDAtMzguMzczLDAtNTguMjQ0LDAKCQkJYzIuODI2LTQ2LjAzNyw1LjY0Ni05MS45Nyw4LjUxNi0xMzguNjk4Yy0xOC42MzMsMC43MDItMzYuODYzLDEuMzktNTUuMDk1LDIuMDc3CgkJCUMzOTIuODY4LDIzOC4zOTQsMzkyLjg2OCwyMzYuMzk0LDM5Mi44NjgsMjM0LjM5NHoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTc5Ny43NzUsMjQ2LjgwN2MtMTQuNDk5LTYuNTU0LTI5LjIxMy05LjI4OC00NC4yMDctOS42NzEKCQkJYy03LjM0My0wLjE4OC0xNC45NTIsMS4wMTUtMjIuMDYyLDIuOTY4Yy05LjEzLDIuNTA3LTExLjA3NCw5LjE0MS00LjY1NiwxNi4yMzhjNS4wNTcsNS41OTIsMTEuMzI1LDEwLjE5MiwxNy40NTksMTQuNjg0CgkJCWMxMS4xMjYsOC4xNDcsMjIuNjUxLDE1Ljc0NywzMy43OSwyMy44NzhjMy4zMTUsMi40Miw2LjAzLDUuNzMsOC43ODcsOC44NGMxNS4xMzcsMTcuMDY4LDE1LjQ4MSwzMS40MDcsMC41NjUsNTEuNjQyCgkJCWMtOS42OCwxMy4xMzEtMjQuNDIsMTguNjM2LTM5LjgzMywyMS45MjRjLTI0Ljc3NCw1LjI4NC00OS42ODMsMy45NjUtNzQuNTUzLDAuNTk4Yy02LjU4OC0wLjg5Mi0xMy4xMzctMi4xMzktMTkuNjQ0LTMuNTA1CgkJCWMtMS4yNTMtMC4yNjMtMy4xMTEtMS43NjQtMy4yMDItMi44MmMtMS4yMjktMTQuMzcyLTIuMTkzLTI4Ljc2Ny0zLjE3OC00Mi41MDZjMTEuNjI5LDMuMzEyLDIzLjAxMiw2Ljg4NiwzNC41NjksOS43NTgKCQkJYzEyLjI4NywzLjA1NCwyNC43MTEsMy4yNDYsMzYuOTkyLTAuNDY1YzEzLjI5OC00LjAxOSwxNS41NjgtMTEuNjc1LDUuMjkzLTIxLjA5NWMtNy4wMzgtNi40NTEtMTUuMTU3LTExLjk0LTIzLjQyLTE2Ljc5MQoJCQljLTE0LjM4My04LjQ0MS0yNy40MjItMTguMDE1LTM3LjAxMy0zMi4wNDhjLTE3LjEzLTI1LjA2NS0yLjM5LTUxLjg5NCwxNC41NzctNjEuOTI0YzEyLjM4NC03LjMyLDI1Ljk3LTEwLjE4Niw0MC4wNDEtMTEuMDA4CgkJCWMyMy45NzYtMS40MDIsNDcuNDg4LDEuODkxLDcwLjczOCw3LjYwMWMyLjkyNCwwLjcxOCwzLjk4NiwxLjg2MSw0LjMwNiw0Ljg5NkM3OTQuNDYyLDIyMC43MDcsNzk2LjEzNiwyMzMuMzgsNzk3Ljc3NSwyNDYuODA3eiIKCQkJLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTg2Mi44ODIsMzc3LjA3NmMyLjMxMi00Ni4zMDEsNC42MDMtOTIuMTYzLDYuOTE2LTEzOC40NzIKCQkJYy0xOC4zMDksMC0zNi4yMzEsMC01NC41MjQsMGMwLTEyLjY1NiwwLTI0Ljg5NSwwLTM3LjU0OGM1NC45MTgsMCwxMDkuOTQzLDAsMTY0LjcxMiwwYzAsMTIuODc0LDAsMjUuNzI1LDAsMzkuMDczCgkJCWMtMTguNzk5LTAuNTc3LTM2LjY5NC0xLjEyNy01NS4yOTUtMS42OTljLTEuNzMyLDQ2LjM1LTMuNDUsOTIuMzQ4LTUuMTgxLDEzOC42NDYKCQkJQzkwMC41ODMsMzc3LjA3Niw4ODIuMDIxLDM3Ny4wNzYsODYyLjg4MiwzNzcuMDc2eiIvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNTc2LjU3NiwyMDAuOTExYzE5Ljg0NSwwLDM4Ljc3NSwwLDU3Ljc3MSwwCgkJCWMtMS41OTMsNTguNzk4LTMuMTc5LDExNy4zMjUtNC43OCwxNzYuNDIyYy0yMC40NzktMC41ODYtNDAuNzA4LTEuMTY0LTYxLjU1NS0xLjc2CgkJCUM1NzAuODc2LDMxNy4xNTgsNTczLjcxOSwyNTkuMTk3LDU3Ni41NzYsMjAwLjkxMXoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEyNzcuMjQyLDIzNS44MzZjLTEuNTk1LDQ3LjE2Ni0zLjE0Niw5My4wNTQtNC43MTEsMTM5LjMxMgoJCQljLTE4LjM5NiwwLTM2Ljc4NiwwLTU1LjA3NywwYzUuNDk4LTU3Ljg0LDQuNjA0LTExNS45MDgsNS43NC0xNzQuMzc5YzguMTU1LTAuMzcxLDE2LjA4OC0wLjk3NywyNC4wMjYtMS4wNDcKCQkJYzI0LjMxOS0wLjIxNSw0OC42NTMtMC43MDEsNzIuOTU3LTAuMDg5YzEwLjM3LDAuMjYyLDIwLjk2NCwxLjk2OSwzMC45NjEsNC43NzljMjkuODcyLDguNCw0MS43NiwzNi4zODQsMjcuOTQzLDY0LjMxNQoJCQljLTYuNTUyLDEzLjI0NS0xNy4zNzksMjIuMDkyLTMwLjIwNiwyOC43OTZjLTEuNzMxLDAuOTA0LTMuNDc4LDEuNzgxLTUuNjQ1LDIuODljMTEuMzQzLDI1LjU2NywyMi41NzEsNTAuODc1LDM0LjEzNyw3Ni45NDQKCQkJYy03LjM4MSwwLTEzLjk2NywwLjAwMS0yMC41NTMsMGMtMTIuNDk3LDAtMjQuOTk1LDAuMDg5LTM3LjQ4OC0wLjExNmMtMS41MTYtMC4wMjUtMy45NTctMS4zMjEtNC4zNjktMi41NjEKCQkJYy0xMC41MDMtMzEuNTU4LTIwLjc5NC02My4xODctMzEuMTA1LTk0LjgwOGMtMC4wOTYtMC4yOTMsMC4wMjMtMC42NTYsMC4wNjctMS40MzRjNC40MTcsMC4zNTcsOC44MjMsMC44NzYsMTMuMjQxLDEuMDM5CgkJCWMxMC4yMjksMC4zNzgsMTguOTg0LTMuMjgzLDI2LjAyMS0xMC41OTFjMTEuMDY4LTExLjQ5NSw3LjI4OS0yNy4xMTctOC4xOTctMzAuMjQ4CgkJCUMxMzAzLjA5NywyMzYuMjM2LDEyOTAuNjI1LDIzNi43MTYsMTI3Ny4yNDIsMjM1LjgzNnoiLz4KCTwvZz4KPC9nPgo8ZyBpZD0iTG9nb194QTBfSW1hZ2VfMV8iPgoJPGc+CgkJPHBhdGggZmlsbD0iI0ZENkMwMiIgZD0iTTIyOS44NjgsMzM2LjM5NGMtMS42NjcsMC0zLjMzMywwLTUsMGMtNS42NjctMS40NjUtMTEuMzMzLTEuNjIxLTE3LDBjLTEuNjY3LDAtMy4zMzMsMC01LDAKCQkJYy0wLjU2Mi0xLjUxMy0xLjkzOS0wLjk4MS0yLjk4Ni0xLjEyYy0xMy4wNzEtMS43MzctMjUuODU0LTQuNjc0LTM3Ljk1Ny05Ljk3MWMtMzYuOTIyLTE2LjE1Ni02Mi4xMDEtNDIuNTc1LTcxLjY3LTgyLjU0MQoJCQljLTAuNzUtMy4xMy0wLjIyNy02LjU5OC0yLjM4Ny05LjM2OGMwLTksMC0xOCwwLTI3YzEuMjgzLTAuNDE0LDAuOTgtMS41NywxLjEzMS0yLjQ4NmMxLjg3NS0xMS4zOTIsNC45ODYtMjIuNDM2LDEwLjI0NC0zMi43MjMKCQkJYzIwLjgyNi00MC43NTUsNTQuNzQ1LTY0LjA1OCw5OC43OS03My44MjljNC42MDUtMS4wMjEsOS41MDgtMC42NjYsMTMuODM1LTIuOTYyYzEwLjMzMywwLDIwLjY2NywwLDMxLDAKCQkJYzAuNTgyLDEuNTE5LDEuOTYzLDAuOTI0LDMuMDA1LDEuMDY0YzE2LjExNiwyLjE3MiwzMS42NzksNi4zNjQsNDYuMDI2LDE0LjA3N2M0MS43MDQsMjIuNDE3LDY1LjI5Niw1Ni40NDksNjQuNzMyLDEwNC43NzYKCQkJYy0wLjMwOSwyNi4zNzQtMTAuNDQ4LDQ5LjU0OC0yNy4wNzEsNjkuODUxYy0yLjI3MSwyLjc3NC0yLjQ4Miw0LjE2NSwwLjM4Nyw2LjYzNmM3LjcxNiw2LjY0MSwxNS41ODIsMTMuMDI4LDI0LjUwMSwxNy45ODkKCQkJYzYuNDA1LDMuNTYyLDEyLjk4Miw2Ljc0NCwyMC40MDcsNy42MWMtMC42MTQsMi4xMjgtMi42ODEsMi4yNzgtNC4yNTIsMi45ODJjLTcuODcxLDMuNTI5LTE2LjI2LDQuNjY3LTI0Ljc3NCw0Ljk4MQoJCQljLTE3Ljc2NiwwLjY1NC0zNS4xNDUtMi4xNjctNTIuMzQ0LTYuMjM3Yy0yLjQ1My0wLjU4LTQuMzgzLTAuNDc0LTYuNTk0LDAuNzA4Yy0xMy41ODEsNy4yNjItMjguMDAxLDEyLjA5Mi00My4xNDYsMTQuOTIKCQkJQzIzOS4xMiwzMzQuNjE1LDIzNC4yNjEsMzM0LjMxOSwyMjkuODY4LDMzNi4zOTR6IE0yNzUuMjY0LDE0MS4yNzdjLTEyLjg1NC0wLjEwNi0yMy4yODYsMTAuMjM3LTIzLjIxOSwyMy4wMjIKCQkJYzAuMDY0LDEyLjQ4NiwxMC40OTEsMjIuOTA2LDIyLjk0NiwyMi45MzVjMTIuNDg3LDAuMDI4LDIyLjc5Ny0xMC4yOTQsMjIuODc5LTIyLjkwNgoJCQlDMjk3Ljk1MSwxNTEuNjUyLDI4Ny44OCwxNDEuMzgyLDI3NS4yNjQsMTQxLjI3N3ogTTI2My45MjUsMjc4LjIyNmMtMC4wMzEtMTIuNjUyLTEwLjIxNC0yMi44NDEtMjIuODM0LTIyLjg0OQoJCQljLTEyLjU3Ni0wLjAwOS0yMi44NjMsMTAuMi0yMi45ODUsMjIuODA4Yy0wLjEyMiwxMi42NTQsMTAuNTMyLDIzLjI5MiwyMy4xOTcsMjMuMTYKCQkJQzI1My44NjcsMzAxLjIxMywyNjMuOTU2LDI5MC45MDIsMjYzLjkyNSwyNzguMjI2eiBNMjIwLjYxOCwxNTMuMjJjLTEyLjY4LDAuMDQ4LTIyLjc1NywxMC4xNjktMjIuNzczLDIyLjg3NQoJCQljLTAuMDE3LDEyLjU5LDEwLjE5MiwyMi45NTgsMjIuNzI4LDIzLjA4M2MxMi41MzMsMC4xMjUsMjMuMjYyLTEwLjY4MSwyMy4xMjUtMjMuMjkyCgkJCUMyNDMuNTYxLDE2My4zMDQsMjMzLjI0NCwxNTMuMTcyLDIyMC42MTgsMTUzLjIyeiBNMTQzLjYyMSwxODcuNzY5Yy0wLjExMiwxMi43MjQsOS43NjEsMjIuOTgsMjIuNDE2LDIzLjI4NgoJCQljMTIuNjM0LDAuMzA3LDIzLjI0NS0xMC4xOSwyMy4yNDYtMjIuOTkzYzAtMTIuNzU1LTkuOTk4LTIyLjgzOS0yMi43MDgtMjIuOTAzQzE1My44MjMsMTY1LjA5NSwxNDMuNzMzLDE3NS4wMzIsMTQzLjYyMSwxODcuNzY5egoJCQkgTTI1My44MjgsMjI5LjAxNmMwLjA1My0xMi41OTItMTAuMTA0LTIyLjg4My0yMi43MTYtMjMuMDE4Yy0xMi41NzItMC4xMzUtMjIuOTU4LDkuOTkxLTIzLjE2NCwyMi41ODYKCQkJYy0wLjIwOCwxMi43MjIsMTAuMjU0LDIzLjMzMSwyMi45NzksMjMuMzAxQzI0My41LDI1MS44NTQsMjUzLjc3NiwyNDEuNTkzLDI1My44MjgsMjI5LjAxNnoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZFRkRGQyIgZD0iTTIyOS44NjgsMzM2LjM5NGM0LjM5My0yLjA3NCw5LjI1Mi0xLjc3OCwxMy44NzctMi42NDIKCQkJYzE1LjE0Ni0yLjgyOCwyOS41NjUtNy42NTgsNDMuMTQ2LTE0LjkyYzIuMjExLTEuMTgyLDQuMTQxLTEuMjg4LDYuNTk0LTAuNzA4YzE3LjE5OSw0LjA3LDM0LjU3OCw2Ljg5Miw1Mi4zNDQsNi4yMzcKCQkJYzguNTE1LTAuMzE0LDE2LjkwMy0xLjQ1MiwyNC43NzQtNC45ODFjMS41NzEtMC43MDQsMy42MzgtMC44NTQsNC4yNTItMi45ODJjMC4zMzgtMC4wMDEsMC42NzUtMC4wMDMsMS4wMTMtMC4wMDQKCQkJYzAsNS42NjctMC4xNDgsMTEuMzM5LDAuMDY4LDE2Ljk5N2MwLjA5NiwyLjUxNS0wLjU2NywzLjA4NS0zLjA2OCwzLjA2OSIvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkQ5ODRFIiBkPSJNMjA3Ljg2OCwzMzYuMzk0YzUuNjY3LTEuNjIxLDExLjMzMy0xLjQ2NSwxNywwCgkJCUMyMTkuMjAxLDMzNi4zOTQsMjEzLjUzNSwzMzYuMzk0LDIwNy44NjgsMzM2LjM5NHoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZFRkNGQiIgZD0iTTI3NS4yNjQsMTQxLjI3N2MxMi42MTYsMC4xMDQsMjIuNjg4LDEwLjM3NSwyMi42MDYsMjMuMDUxCgkJCWMtMC4wODIsMTIuNjEyLTEwLjM5MiwyMi45MzUtMjIuODc5LDIyLjkwNmMtMTIuNDU1LTAuMDI4LTIyLjg4Mi0xMC40NDgtMjIuOTQ2LTIyLjkzNQoJCQlDMjUxLjk3OCwxNTEuNTE1LDI2Mi40MSwxNDEuMTcxLDI3NS4yNjQsMTQxLjI3N3oiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZFRkNGQiIgZD0iTTI2My45MjUsMjc4LjIyNmMwLjAzMSwxMi42NzctMTAuMDU4LDIyLjk4Ny0yMi42MjIsMjMuMTE5CgkJCWMtMTIuNjY1LDAuMTMyLTIzLjMxOS0xMC41MDYtMjMuMTk3LTIzLjE2YzAuMTIyLTEyLjYwNywxMC40MDktMjIuODE2LDIyLjk4NS0yMi44MDgKCQkJQzI1My43MTEsMjU1LjM4NSwyNjMuODk0LDI2NS41NzMsMjYzLjkyNSwyNzguMjI2eiIvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkVGQ0ZCIiBkPSJNMjIwLjYxOCwxNTMuMjJjMTIuNjI2LTAuMDQ4LDIyLjk0MiwxMC4wODQsMjMuMDc5LDIyLjY2NgoJCQljMC4xMzcsMTIuNjExLTEwLjU5MiwyMy40MTctMjMuMTI1LDIzLjI5MmMtMTIuNTM1LTAuMTI1LTIyLjc0NC0xMC40OTMtMjIuNzI4LTIzLjA4MwoJCQlDMTk3Ljg2MSwxNjMuMzg5LDIwNy45MzgsMTUzLjI2OCwyMjAuNjE4LDE1My4yMnoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZFRkNGQiIgZD0iTTE0My42MjEsMTg3Ljc2OWMwLjExMi0xMi43MzYsMTAuMjAyLTIyLjY3NCwyMi45NTQtMjIuNjEKCQkJYzEyLjcxLDAuMDY0LDIyLjcwOCwxMC4xNDgsMjIuNzA4LDIyLjkwM2MtMC4wMDEsMTIuODAzLTEwLjYxMiwyMy4zLTIzLjI0NiwyMi45OTMKCQkJQzE1My4zODIsMjEwLjc0OSwxNDMuNTA5LDIwMC40OTIsMTQzLjYyMSwxODcuNzY5eiIvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkVGREZDIiBkPSJNMjUzLjgyOCwyMjkuMDE2Yy0wLjA1MiwxMi41NzctMTAuMzI4LDIyLjgzOS0yMi45LDIyLjg2OQoJCQljLTEyLjcyNiwwLjAzLTIzLjE4OC0xMC41NzktMjIuOTc5LTIzLjMwMWMwLjIwNi0xMi41OTUsMTAuNTkyLTIyLjcyMSwyMy4xNjQtMjIuNTg2CgkJCUMyNDMuNzI1LDIwNi4xMzMsMjUzLjg4MSwyMTYuNDI0LDI1My44MjgsMjI5LjAxNnoiLz4KCTwvZz4KPC9nPgo8L3N2Zz4=" alt="tistory" /></a>
+									<div class="tistoryJoin"><a href="http://www.tistory.com/join">티스토리 가입하기!</a></div>
+								</div>
+							</s_sidebar_element>
+
+							<s_sidebar_element>
+							<!-- RSS 링크 -->
+								<div id="btnRSS">
+									<a href="[##_rss_url_##]" onclick="window.open(this.href); return false">
+										<span class="entypo-rss"></span> 
+										<span class="text"> RSS FEED</span>
+									</a>
+								</div>
+							</s_sidebar_element>
+						</s_sidebar>
+					</aside><!-- sidebar close -->
+					<div class="clear"></div>
+					<hr />
+	      </div><!-- wrapContent close -->
+			</div><!-- container close -->
+	</div>
+	<footer id="footer">
+		<nav class="footMenu">
+			<a href="[##_localog_link_##]">지역로그</a> :
+			<a href="[##_taglog_link_##]">태그로그</a> :
+		    <a href="[##_blog_link_##]media">미디어로그</a> :
+			<a href="[##_guestbook_link_##]">방명록</a> :
+			<a href="[##_owner_url_##]">관리자</a> :
+			<a href="[##_owner_url_##]/entry/post">글쓰기</a>
+		</nav>
+		<div class="copyright">
+			<a href="[##_blog_link_##]"> [##_blogger_##]</a>'s Blog is powered by <a href="http://daum.net" onclick="window.open(this.href); return false">Daum</a>  / Designed by <a href="http://www.tistory.com" target="_blank">Tistory</a> / Modernize by <a href="http://est0que.tistory.com" target="_blank">Estoque</a> / HTML5 / CSS3 / [##_tattertools_name_##] [##_tattertools_version_##]
+		</div>
+	</footer>
+</s_t3>
+</body>
+</html>

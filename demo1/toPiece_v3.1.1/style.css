@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* Rollover, Point color */
+body a:hover,body a:active,#header nav .topnav ul li a:hover,.section_1 .title h2 a,.section_1 .posttag span,.section_1 .posttag a:hover,
+.comment_count a .cnt,#paging .selected,.sidebox .newslist li a:hover,.sidebox .tagcloud li a:hover,.sidebox .tagcloud li .accent,
+.sidebox .categorylist ul li ul li a:hover,.accent,.section_1 .posttag a{ color:#ec008c; }
+
+.reply_write div input:focus,.reply_write div textarea:focus, .section_2 .sidebox form input:focus{ border:1px solid #ec008c; }
+
+#header .head_nav,.section_1 .fixed_img_col li:hover,
+.reply_write a:hover,.fixed_img_col .thumb .thumbnew,.fixed_txt_col ul li a .thumbnew{ background-color:#ec008c; }
+
+/* 레이아웃 좌우 변경 : 컨텐츠를 왼쪽으로-left , 컨텐츠를 오른쪽으로-right */
+[class^="section_"],[class*=" section_"]{ float:left; }
+
+/* 썸네일 리스트 : 작성일 숨김 */
+.fixed_img_col ul li a strong p{ display:; }
+
+/* 썸네일 리스트 : 제목 숨김 */
+.fixed_img_col ul li a strong .elli{ display:; }
+
+/* 썸네일 리스트 : 제목 배경색 변경 & 배경색 숨김 */
+.fixed_img_col ul li a strong{ background-color:#ec008c; display:; }
+
+/* 하단으로 가는 버튼 숨김 */
+.side_nav .side_bottom{ display:none; }
+
+/* 트랙백 탭 숨김 */
+.comment_count .tb_title{ display:; }
+
+/* 댓글 속 링크 color, rollover color */
+.comment_list ul .commentLi .cmtxt a{ color:#222; }
+.comment_list ul .commentLi .cmtxt a:hover{ color:#ec008c; }
+
+/* 티스토리 기본 메뉴 숨김 */
+.tistorytoolbar{ display:none !important; }
+
+/* 프로필 아래 티스토리 메뉴 숨김 */
+.sidebox .admin{ display:; }/*관리자*/
+.sidebox .write{ display:; }/*글쓰기*/
+.sidebox .link{ display:; }/*링크*/
+
+/* Mobile - Navigation color */
+@media only screen and (max-width: 767px){
+	#header nav .topnav{ background-color:#ec008c; } /* 모바일 Navigation color */
+	#header nav .topnav ul li a:hover{ color:#eee; } /* 모바일 Menu Rollover color : 변경하지 않아도 됩니다. */
+}
+
+/* Drag color */
+::selection{color:white;background:#ec008c;}
+::-moz-selection{color:white;background:#ec008c;}
+
+
+
